@@ -1,0 +1,140 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>网格系统-根据屏幕大小响应式设计</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Keywords" content="twetterBootstrap">
+        <meta http-equiv="Description" content="在Twitter引导默认的网格系统是940px，
+              宽12列。它有四个响应变化的电话，平板电脑画像，表景观和小型台式机，和大宽屏幕桌面。
+              这个例子显示了如何创建1列，2列，6列，12列和第4列的顺序。
+              还要注意的是，所有创建的列包裹着的“容器”类，它被用来创建一个固定的布局使用Twitter引导。">  
+
+        <link href="./css/bootstrap.css" rel="stylesheet">   
+
+    </head>
+    <body>
+
+        网格是现在非常流行的页面布局，整个网页都可以是不同的网格组成，使用 Twetter Bootstrap，可以很轻松的在网页中划分出网格。
+        横向最多划分为 12 个网格。一般使用 div  class="spanx" 表示，想分为几个单元格就写上 y 次。
+        注意 ：y是你要创建的列数，x是12 / Y。y和x必须为正整数，其值必须是1到12。
+
+        <hr />
+
+        <div class="container">  
+            <div class="row">  
+                <div class="span12"><h1>Twetter Bootstrap 网格例子</h1></div>  
+            </div> 
+
+
+            <div class="row">  
+                <div class="span3">  
+                    <p><img src="img/features_performance_graphics.jpg" width="149" height="52" 
+                            alt="twetter Bootstarp" /></p>   
+                </div>  
+
+                <div class="span9">
+                    <p> with the example codes.</p>   
+                </div>  
+            </div>  
+
+
+            <div class="row">  
+                <div class="span12">  
+                    <h3>一行 12 个单元长度，可以分为 6 份</h3>   
+                </div>  
+                <!-- 这里 是 2*6＝12   140*6=840 -->
+                <div class="span2">  
+                    <p><img src="img/foods/1135763393fm.jpeg" width="140" height="86" alt="logo" /></p>   
+                </div>  
+                <div class="span2">  
+                    <p><img src="img/foods/1135763393fm.jpeg" width="140" height="86" alt="logo" /></p>   
+                </div>  
+                <div class="span2">  
+                    <p><img src="img/foods/1135763393fm.jpeg" width="140" height="86" alt="logo" /></p>   
+                </div>  
+                <div class="span2">  
+                    <p><img src="img/foods/1135763393fm.jpeg" width="140" height="86" alt="logo" /></p>   
+                </div>  
+                <div class="span2">  
+                    <p><img src="img/foods/1135763393fm.jpeg" width="140" height="86" alt="logo" /></p>   
+                </div>  
+                <div class="span2">  
+                    <p><img src="img/foods/1135763393fm.jpeg" width="140" height="86" alt="logo" /></p>   
+                </div>  
+            </div>  
+
+
+
+
+            <div class="row">  
+                <div class="span12">  
+                    <h3>12 个基本单元格长度，也可以分为 12 份</h3>   
+                </div>  
+            </div>  
+            <div class="row">  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="50" height="49" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="50" height="38" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="50" height="55" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="50" height="53" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="50" height="54" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="51" height="53" alt="logo" /></p>   
+                </div>  
+                <div class="span1"> 
+                    <p><img src="img/foods/428483.jpeg" width="48" height="53" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="51" height="53" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="49" height="54" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="48" height="53" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="51" height="53" alt="logo" /></p>   
+                </div>  
+                <div class="span1">  
+                    <p><img src="img/foods/428483.jpeg" width="48" height="57" alt="logo" /></p>   
+                </div>  
+            </div> 
+            
+            
+            <div class="row">  
+                <div class="span3">  
+                    <h3>Fontend Development:</h3>   
+                    <p>HTML4.0, XHTML1.0, CSS2.1, HTML5, CSS3, JavaScript</p>  
+                </div>  
+                <div class="span3">  
+                    <h3>Backend Developemt:</h3>   
+                    <p>PHP, Ruby, Python, Java, ASP.NET, SCALA</p>  
+                </div>  
+                <div class="span3">  
+                    <h3>Database Management:</h3>   
+                    <p>SQL, MySQL POstgreSQL, NoSQL, MongoDB</p>  
+                </div>  
+                <div class="span3">  
+                    <h3>APIs, Tools and Tips:</h3>   
+                    <p>Google Plus API, Twitter Bootstrap, JSON, Firebug, WebPNG</p>  
+                </div>  
+            </div>  
+        </div>     
+
+
+    </body>
+</html>
