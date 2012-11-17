@@ -13,10 +13,21 @@ and open the template in the editor.
               这个例子显示了如何创建1列，2列，6列，12列和第4列的顺序。
               还要注意的是，所有创建的列包裹着的“容器”类，它被用来创建一个固定的布局使用Twitter引导。">  
 
-        <link href="./css/bootstrap.css" rel="stylesheet">   
+        <link href="./css/bootstrap.css" rel="stylesheet">  
+        <link href="./css/bootstrap-responsive.css" rel="stylesheet">
 
+        
+        <!-- 自动代码语法高亮显示 -->
+        <link href="./css/prettify.css" type="text/css" rel="stylesheet" />
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+       
+        
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".subnav" data-offset="50">
 
         网格是现在非常流行的页面布局，整个网页都可以是不同的网格组成，使用 Twetter Bootstrap，可以很轻松的在网页中划分出网格。
         横向最多划分为 12 个网格。一般使用 div  class="spanx" 表示，想分为几个单元格就写上 y 次。
@@ -29,7 +40,7 @@ and open the template in the editor.
                 <div class="span12"><h1>Twetter Bootstrap 网格例子</h1></div>  
             </div> 
 
-
+            <!-- 建立两个不相等的网格 -->
             <div class="row">  
                 <div class="span3">  
                     <p><img src="img/features_performance_graphics.jpg" width="149" height="52" 
@@ -37,7 +48,8 @@ and open the template in the editor.
                 </div>  
 
                 <div class="span9">
-                    <p> with the example codes.</p>   
+                    <p><img src="img/features_performance_graphics.jpg" width="780" height="52" 
+                            alt="twetter Bootstarp" /></p>   
                 </div>  
             </div>  
 
@@ -68,7 +80,7 @@ and open the template in the editor.
             </div>  
 
 
-
+            <hr/>
 
             <div class="row">  
                 <div class="span12">  
@@ -113,8 +125,8 @@ and open the template in the editor.
                     <p><img src="img/foods/428483.jpeg" width="48" height="57" alt="logo" /></p>   
                 </div>  
             </div> 
-            
-            
+            <hr />
+            <!-- 网格里面也可以写上文字 -->    
             <div class="row">  
                 <div class="span3">  
                     <h3>Fontend Development:</h3>   
@@ -133,8 +145,144 @@ and open the template in the editor.
                     <p>Google Plus API, Twitter Bootstrap, JSON, Firebug, WebPNG</p>  
                 </div>  
             </div>  
-        </div>     
+           
+         <hr/>
 
+        <!-- =====================Grid system==================== -->
+        <section id="gridSystem">
+            <div class="page-header">
+                <h1>默认栅格系统 <small>响应式的12列系统</small></h1>
+            </div>
 
+            <div class="row show-grid">
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+                <div class="span1"><img src="img/foods/u400009113.jpeg" alt="1 Grid" /></div>
+            </div>
+            <div class="row show-grid">
+                <div class="span4"><img src="img/1-2.png" alt="4 Grid" /></div>
+                <div class="span4"><img src="img/1-2.png" alt="4 Grid" /></div>
+                <div class="span4"><img src="img/1-2.png" alt="4 Grid" /></div>
+            </div>
+            <div class="row show-grid">
+                <div class="span4"><img src="img/1-2.png" alt="4 Grid" /></div>
+                <div class="span8"><img src="img/1-2.png" alt="8 Grid" /></div>
+            </div>
+            <div class="row show-grid">
+                <div class="span6"><img src="img/1-2.png" alt="6 Grid" /></div>
+                <div class="span6"><img src="img/1-2.png" alt="6 Grid" /></div>
+            </div>
+            <div class="row show-grid">
+                <div class="span12" style="border:1px solid;">12</div>
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <pre>
+                    <p>
+                        做为框架默认的一部分，Bootstrap提供了<strong>940px宽, 12列的栅格系统</strong>。
+                    </p>
+                    <p>
+                        针对各种不同的设备和分辨率，Bootstrap提供了四种响应式方案：手机，垂直平板，水平平板/小型桌面，宽屏桌面。
+                    </p>
+                    </pre>
+                </div><!-- /.span -->
+                <div class="span4">
+                    <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span8"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+                    </pre>
+                </div><!-- /.span -->
+                <div class="span4">
+                    <pre>
+                    <p>
+                        如左，一个基本的布局由两个“列”组成，栅格系统由一系列横跨12等分的"span*"组成。
+                    </p>
+                    </pre>
+                </div><!-- /.span -->
+            </div><!-- /.row -->
+
+            <br>
+
+            <h2>列的偏移</h2>
+            <div class="row show-grid">
+                <div class="span4">4</div>
+                <div class="span4 offset4">4 offset 4</div>
+            </div><!-- /row -->
+            <div class="row show-grid">
+                <div class="span3 offset3">3 offset 3</div>
+                <div class="span3 offset3">3 offset 3</div>
+            </div><!-- /row -->
+            <div class="row show-grid">
+                <div class="span8 offset4">8 offset 4</div>
+            </div><!-- /row -->
+            <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span4 offset4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+
+            <br>
+
+            <h2>列的内嵌</h2>
+            <div class="row">
+                <div class="span6">
+                    <p>
+                        在Bootstrap中使用静态(non-fluid)栅格很容易实现内嵌，
+                        只要在一个已存在的 <code>.span*</code> 列中，嵌套一个新的 <code>.row</code> 列，然后在 <code>.row</code> 列中再添加一组 <code>.span*</code> 列即可。
+                    </p>
+                    <h3>例子</h3>
+                    <p>
+                        内嵌的行应该包含多个列，行的 <code>span*</code> 应该是几个内嵌列 <code>span*</code> 之和。
+                        例如，两个内嵌的 <code>.span3</code> 列应该包含在 <code>.span6</code> 列中。
+                    </p>
+                    <div class="row show-grid">
+                        <div class="span6">
+                            Level 1 of column
+                            <div class="row show-grid">
+                                <div class="span3">
+                                    Level 2
+                                </div>
+                                <div class="span3">
+                                    Level 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.span -->
+                <div class="span6">
+                    <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="span12"&gt;
+    Level 1 of column
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;Level 2&lt;/div&gt;
+      &lt;div class="span6"&gt;Level 2&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                    </pre>
+                </div><!-- /.span -->
+            </div><!-- /.row -->
+        </section>
+
+ </div> 
+
+        
+        
+    <!-- js 代码放在页面底部，加快响应速度 -->    
+    <script type="text/javascript" src="./js/libs/google-code-prettify/prettify.js"></script>
+    
     </body>
 </html>
